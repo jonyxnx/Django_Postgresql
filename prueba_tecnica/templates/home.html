@@ -1,0 +1,101 @@
+<html>
+<head>
+    <title>Paises</title>
+    <style>
+        body {
+            font-family: Merriweather, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #0056b3; 
+        }
+        form {
+            margin-bottom: 20px;
+        }
+        label {
+            margin-right: 10px;
+        }
+        input[type="text"] {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #6ABF3D; 
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            color: white;
+            font-weight: bold;
+        }
+        button:hover {
+            background-color: #1EAB26; 
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        th {
+            background-color: #0F2A7E;
+            color: white;
+        }
+        tr:hover {
+            background-color: #D3D3D3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Países</h1>
+    <form method="get">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre">
+        
+        <label for="capital">Capital:</label>
+        <input type="text" id="capital" name="capital">
+        
+        <label for="poblacion">Población:</label>
+        <input type="text" id="poblacion" name="poblacion">
+        
+        <button type="submit">Filtrar</button>
+    </form>
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre del país</th>
+                <th>Capital</th>
+                <th>Población</th>
+                <th>Área</th>
+                <th>Acción</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for pais in paises %}
+            <tr>
+                <td><span style="font-weight:bold">{{ pais.nombre }} </span></td>
+                <td>{{ pais.capital }}</td>
+                <td>{{ pais.poblacion }}</td>
+                <td>{{ pais.area }}  km<sup>2</sup> </td>
+                <td>
+                    <form method="post" action="{% url 'home' %}">
+                        {% csrf_token %}
+                        <input type="hidden" name="pais_id" value="{{ pais.id }}">
+                        <button type="submit">Eliminar registro</button>
+                    </form>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
