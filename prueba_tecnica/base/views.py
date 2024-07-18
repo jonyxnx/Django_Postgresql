@@ -10,11 +10,12 @@ def home(request):
             pais.save()
         return redirect('home')
 
-    paises = Pais.objects.filter(is_active=True)
-    nombre = request.GET.get('nombre')
-    capital = request.GET.get('capital')
-    poblacion = request.GET.get('poblacion')
-    
+    paises = Pais.objects.filter(is_active=True) # Tomamos solo los registros activos
+    nombre = request.GET.get('nombre') # Filtramos por nombre del pais
+    capital = request.GET.get('capital') # Filtramos por nombre de la capital
+    poblacion = request.GET.get('poblacion') # Filtramos por tamaño de poblacion
+
+    # Realizamos el filtrado: 
     if nombre:
         paises = paises.filter(nombre__icontains=nombre)
     if capital:
