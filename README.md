@@ -10,7 +10,7 @@ Instrucciones para instalar y configurar el proyecto.
 
 Clona el repositorio
 ```bash
-git clone https://github.com/usuario/nombre-del-proyecto.git
+git clone https://github.com/jonyxnx/Fullstack_Prueba_Tecnica.git
 ```
 Navega al directorio del proyecto
 ```bash
