@@ -78,8 +78,8 @@ Por poblacion:
 
 Realizar varios filtrados a la vez:
 
-![](images/Filtrado_doble.png)
+![](images/Filtrado_doble.jpg)
 
 Así como eliminar resgistros (la eliminación se realiza con un borrado lógico):
 
-![se eliminó a México de los registros](images/eliminacion.png)
+![se eliminó a México de los registros](images/eliminacion.jpg)
