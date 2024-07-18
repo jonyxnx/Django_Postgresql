@@ -1,7 +1,3 @@
-# Nombre del Proyecto
-
-Breve descripción del proyecto y su propósito.
-
 ## Contenidos
 
 - [Instalación](#instalación)
