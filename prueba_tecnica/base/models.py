@@ -6,4 +6,4 @@ class Pais(models.Model):
     capital = models.CharField(max_length=100)
     poblacion = models.BigIntegerField()
     area = models.IntegerField()
-    is_active = models.BooleanField(default=True)
+    is_active = models.BooleanField(default=True) # Borrado lógico
