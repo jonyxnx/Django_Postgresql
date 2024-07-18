@@ -74,7 +74,7 @@ Por nombre de la capital:
 
 Por poblacion:
 
-![](images/Filtrado_por_poblacion.png)
+![](images/filtrado_por_poblacion.png)
 
 Realizar varios filtrados a la vez:
 
