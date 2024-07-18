@@ -2,7 +2,7 @@
 
 Breve descripción del proyecto y su propósito.
 
-## Tabla de Contenidos
+## Contenidos
 
 - [Instalación](#instalación)
 - [Uso](#uso)
@@ -39,14 +39,15 @@ cd prueba_tecnica
 
 Modifica el archivo '/prueba_tecnica/settings.py' para conectarse con tus credenciales de PostgreSQL
 ```python
+# Coloca aquí tus credenciales
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'postgres',
-        'USER': 'postgres',
-        'PASSWORD': 'root',
-        'HOST': 'localhost',
-        'PORT': '5432',    }
+        'NAME': '',
+        'USER': '',
+        'PASSWORD': '',
+        'HOST': '',
+        'PORT': '',    }
 }
 ```
 
@@ -60,3 +61,29 @@ Inicia el servidor de desarrollo
 python manage.py runserver
 ```
 Ingresa al servidor local con 'http://127.0.0.1:8000/'
+
+## Uso
+
+Dentro de la apliación veremos lo siguiente:
+
+![Página principal](images/homepage.jpg)
+
+Podemos filtrar por nombre del pais:
+
+![](images/filtrado_por_nombre.png)
+
+Por nombre de la capital:
+
+![](images/filtrado_por_capital.png)
+
+Por poblacion:
+
+![](images/Filtrado_por_poblacion.png)
+
+Realizar varios filtrados a la vez:
+
+![](images/Filtrado_doble.png)
+
+Así como eliminar resgistros (la eliminación se realiza con un borrado lógico):
+
+![se eliminó a México de los registros](images/eliminacion.png)
