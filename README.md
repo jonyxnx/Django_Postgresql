@@ -86,7 +86,7 @@ Así como eliminar resgistros (la eliminación se realiza con un borrado lógico
 
 ### Nota:
 
-Para recuperar los archivos tras el borrado lógico podemos ejecutar el siguiente comando:
+Para recuperar los registros tras el borrado podemos ejecutar el siguiente comando:
 
 ```bash
 python manage.py migrate base zero
