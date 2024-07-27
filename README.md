@@ -10,11 +10,11 @@ Instrucciones para instalar y configurar el proyecto.
 
 Clona el repositorio
 ```bash
-git clone https://github.com/jonyxnx/Fullstack_Prueba_Tecnica.git
+git clone https://github.com/jonyxnx/Django_Postgresql.git
 ```
 Navega al directorio del proyecto
 ```bash
-cd Fullstack_Prueba_Tecnica
+cd Django_Postgresql
 ```
 Crea y activa un entorno virtual
 
