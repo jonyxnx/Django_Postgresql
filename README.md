@@ -78,7 +78,7 @@ Por poblacion:
 
 Realizar varios filtrados a la vez:
 
-![](images/filtrado_doble.jpg)
+![](images/image.png)
 
 Así como eliminar resgistros (la eliminación se realiza con un borrado lógico):
 
